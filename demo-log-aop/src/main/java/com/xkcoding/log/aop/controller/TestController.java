@@ -21,7 +21,12 @@ import java.util.Map;
  * @date Created in 2018-10-01 22:10
  */
 @Slf4j
-@RestController
+@RestController(value = "/testController")
+/**
+ * @RestController 注解相当于 @ResponseBody ＋ @Controller合在一起的作用。
+ * 如果只是使用@RestController注解Controller，则Controller中的方法无法返回jsp页面，或者html，
+ * 配置的视图解析器 InternalResourceViewResolver不起作用，返回的内容就是Return 里的内容。
+ */
 public class TestController {
 
     /**
