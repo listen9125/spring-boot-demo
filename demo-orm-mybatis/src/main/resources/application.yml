@@ -28,5 +28,7 @@ mybatis:
   configuration:
     # 下划线转驼峰
     map-underscore-to-camel-case: true
+  ##xml路径
   mapper-locations: classpath:mappers/*.xml
+  ##实体类别名，该路径下的实体类均可使用别名
   type-aliases-package: com.xkcoding.orm.mybatis.entity
